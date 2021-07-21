@@ -1,3 +1,8 @@
+/**
+ *    Not Found Component -
+ *    displays when a users search has no results
+ */
+
 import React from "react";
 
 const NotFound = () => (

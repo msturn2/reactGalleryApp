@@ -1,25 +1,44 @@
+/**
+ *    SearchForm component -
+ *    handles state change and syncs url with 
+ *    users query
+ */
+
+//  used withRouter to handle browser back and 
+//  forward buttons
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
 class SearchForm extends Component {
   
+  //  varialbe to store user query from input
+  //  so that state in App component will match
   state = {
     searchTerm: ""
   };
 
+  //  allows state to change based on user
+  //  query
   handleValueChange = (e) => {
     this.setState({
       searchTerm: e.target.value
     });
   }
 
+  //  updates state up submit and checks if
+  //  query is a nav button or not
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.onSearch(
       this.state.searchTerm,
       false
     )
+
+    //  clears input upon submit
     e.currentTarget.reset();
+
+    //  manages history for toggle back and 
+    //  forward browser buttons
     let path = `/search/${this.state.searchTerm}`;
     this.props.history.push(path);
   }
@@ -28,12 +47,15 @@ class SearchForm extends Component {
     return (
       <form 
         className="search-form" 
+        // passes user query
         onSubmit={this.handleSubmit}
       >
         <input 
           type="search" 
           name="search" 
           placeholder="Search..."
+          //  passes func to manage state when query 
+          //  changes
           onChange={this.handleValueChange}
           required
         />

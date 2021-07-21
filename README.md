@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# *React Gallery App*
+
+## Project Overview
+
+For this project, I used the very popular and in-demand React library to create an image gallery app. With the help of this powerful "MVC" (Model, View, Controller) library, the app is built in the style of modern single-page applications to keep it fast, modular, and in sync with current web development trends.
+
+Using the Create React App tool, I set up the initial project.
+
+Then I:
+
+- Wrote JavaScript and JSX to build out the gallery components in a modular fashion.
+- Used React Router to set up routes for three default topic pages, search page, no results page and 404 page.
+- Used [Axios](https://axios-http.com/) to fetch data from the Flickr API and then display images in the app.
+- Added logic to handle the search and various requirements of the project.
+- Added custom styling to the supplied CSS to personalize the project.
+  - Styling includes:
+    - Gradient for body and photo-container class
+    - Border and box-shadow for image <li>
+    - Focus added to Search Bar with transitional coloring
+    - Vader gif added to 404 route with transitional hover and link to <Home> route
+    - Changed text color to 404 route <h1> tag
+
+### Live Site:
+
+[https://epic-hermann-57c561.netlify.app](https://epic-hermann-57c561.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

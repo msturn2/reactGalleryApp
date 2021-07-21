@@ -1,3 +1,8 @@
+/**
+ *    Navigation component -
+ *    enables functionallity of nav buttons
+ */
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 
