@@ -68,8 +68,8 @@ export default class App extends Component {
           {
             (this.state.loading
             || this.state.beaches.length 
-             * this.state.waves.length 
-             * this.state.sunrises.length === 0)
+            * this.state.waves.length 
+            * this.state.sunrises.length === 0)
             ? <h1>Loading...</h1>
             : <Switch>
                 <Route 

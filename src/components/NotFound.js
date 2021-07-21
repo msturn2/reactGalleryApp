@@ -4,8 +4,8 @@ const NotFound = () => (
   <ul>
     <li className="not-found">
       <h1>No Results Found</h1>
-      <p>Your search did not return any results, 
-      please try again.</p>
+      <h3>Your search did not return any results, 
+      please try again.</h3>
     </li>
   </ul>
 );

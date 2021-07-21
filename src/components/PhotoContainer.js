@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import Photo from "./Photo";
 import NotFound from "./NotFound";
 
-class PhotoContainer extends Component {
+export default class PhotoContainer extends Component {
 
   componentDidUpdate() {
     if (this.props.searchInput !== this.props.query) {
@@ -47,5 +47,3 @@ class PhotoContainer extends Component {
     }
   }
 }
-
-export default PhotoContainer;
