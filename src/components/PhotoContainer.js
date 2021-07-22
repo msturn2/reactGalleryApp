@@ -13,8 +13,9 @@ import NotFound from "./NotFound";
 
 export default class PhotoContainer extends Component {
 
-  //  used to toggle back and forward buttons in 
-  //  browser...
+  //  used in case of reload on "/search/:query"
+  //  route, it will allow the browser to reload
+  //  the correct query and toggle back and forward
   componentDidUpdate() {
     if (this.props.searchInput !== this.props.query) {
       this.props.fetchData(this.props.query);
@@ -22,6 +23,7 @@ export default class PhotoContainer extends Component {
   }
 
   render() {
+    // console.log(this.props.query);
     const results = this.props.data;
 
     //  used map to build an array of images 
