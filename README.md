@@ -16,7 +16,8 @@ Then I:
   - Styling includes:
     - Gradient for body and photo-container class
     - Border and box-shadow for image li tag
-    - Focus added to Search Bar with transitional coloring
+    - Object-fit: cover used to fill img li
+    - Hover added to Search Bar with transitional coloring
     - Vader gif added to 404 route with transitional hover and link to Home route
     - Changed text color to 404 route h1 tag
 

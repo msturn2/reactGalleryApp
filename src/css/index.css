@@ -161,6 +161,12 @@ div .container {
   border: 4px solid rgb(86, 87, 85);
 }
 
+.photo-container ul img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .search-form input:hover {
   border-color: #465ee07a;
   transition: 0.4s ease-in;

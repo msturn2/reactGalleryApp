@@ -3,7 +3,6 @@
  *    top level component that controls the app
  */
 
-
 import React, { Component } from "react";
 import axios from "axios";
 
@@ -62,8 +61,8 @@ export default class App extends Component {
           });
         } else {
           this.setState({ 
-            query: res.data.photos.photo, 
-            searchInput: query
+            searchInput: query,
+            query: res.data.photos.photo
           });
         }
 
@@ -91,7 +90,10 @@ export default class App extends Component {
           for data to populate the page and then once loaded 
           will populate the appropriate route*/}
           {
-            (this.state.loading)
+            (this.state.loading
+            || this.state.beaches.length
+            * this.state.waves.length
+            * this.state.sunrises.length === 0)
             ? <h1>Loading...</h1>
             : <Switch>
 

@@ -33,10 +33,8 @@ class SearchForm extends Component {
       this.state.searchTerm,
       false
     )
-
     //  clears input upon submit
     e.currentTarget.reset();
-
     //  manages history for toggle back and 
     //  forward browser buttons
     let path = `/search/${this.state.searchTerm}`;
